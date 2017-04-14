@@ -95,7 +95,6 @@ bindkey -v
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/bman/.zshrc'
 
-# End of lines added by compinstall
 export PATH=/home/bman/.bin:$PATH
 
 alias ls='ls --color=auto'

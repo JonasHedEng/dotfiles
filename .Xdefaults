@@ -2,11 +2,11 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-Xft.dpi:                    96
+!Xft.dpi:                    96
 Xft.antialias:              true
 Xft.rgba:                   rgba
-Xft.hinting:                true
-Xft.hintstyle:              hintslight
+!Xft.hinting:                true
+!Xft.hintstyle:              hintslight
 
 !-------------------------------------------------------------------------------
 ! URxvt settings
@@ -18,7 +18,7 @@ Xft.hintstyle:              hintslight
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
-URxvt.fading:               60
+URxvt.fading:               82
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
@@ -53,7 +53,8 @@ URxvt.pointerBlank:         true
 
 !!Source http://github.com/altercation/solarized
 
-*background: [88]#073642
+*background: [92]#073642
+!*background: #073642
 !*background: argb:ee00/0700/3600/4200
 *foreground: #657b83
 !!*fading: 40

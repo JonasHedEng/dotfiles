@@ -73,6 +73,7 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'rust-lang/rust.vim'
 Plugin 'bling/vim-bufferline'
 Plugin 'cespare/vim-toml'
+Plugin 'lambdatoast/elm.vim'
 
 " End Vundle
 call vundle#end()
@@ -91,8 +92,8 @@ inoremap ( ()<esc>
 inoremap ( ()<esc>
 inoremap [ []<esc>
 inoremap { {}<esc>
-inoremap ' ''<esc>
+""inoremap ' ''<esc>
 inoremap " ""<esc>
 
-inoremap <tab> <C-x><C-p>
+inoremap <tab> <C-p>
 

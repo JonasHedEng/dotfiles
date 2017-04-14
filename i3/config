@@ -6,7 +6,7 @@ set $mod Mod1
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
-font pango:monospace 8
+font pango:monospace 11
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -86,10 +86,10 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 ""
-set $workspace2 ""
-set $workspace3 ""
-set $workspace10 ""
+set $workspace1 "1"
+set $workspace2 "2"
+set $workspace3 "3"
+set $workspace10 "0"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -156,24 +156,18 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3blocks
+    status_command i3blocks
 }
 
 # Gaps
-gaps inner 15
-gaps outer 10
+#gaps inner 15
+#gaps outer 10
 
 # Set lock keybind
-bindsym $mod+Shift+x exec lock -f Source-Code-Pro-Semibold -t LOCKED -- scrot -z
+bindsym $mod+Shift+x exec i3lock-fancy -f Office-Code-Pro-Light -t LOCKED -p
 
 # Set wallpaper
-exec_always feh --bg-fill /home/bman/Pictures/wallpaper.jpg
-# Rebind CAPS to CTRL
-exec /usr/bin/setxkbmap -option "ctrl:nocaps"
-exec /usr/bin/setxkbmap -option compose:ralt
-exec /usr/bin/xcape -e 'Control_L=Escape'
-
-exec --no-startup-id i3-msg 'workspace $workspace10; exec /usr/bin/spotify'
+exec_always feh --bg-fill /home/bman/Pictures/galac_light_blue.jpg
 
 # Remove title bars from windows
 for_window [class="^.*"] border pixel 1
