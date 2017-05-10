@@ -18,7 +18,7 @@ Xft.rgba:                   rgba
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
-URxvt.fading:               82
+URxvt.fading:               12
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
@@ -53,7 +53,7 @@ URxvt.pointerBlank:         true
 
 !!Source http://github.com/altercation/solarized
 
-*background: [92]#073642
+*background: [88]#073642
 !*background: #073642
 !*background: argb:ee00/0700/3600/4200
 *foreground: #657b83
