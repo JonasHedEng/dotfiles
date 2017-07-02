@@ -166,9 +166,12 @@ bindsym $mod+r mode "resize"
 # Set lock keybind
 bindsym $mod+Shift+x exec i3lock-fancy -f Office-Code-Pro-Light -t LOCKED -p
 
+bindsym $mod+Shift+w exec workman
+bindsym $mod+Shift+n exec normal
+
 # Set wallpaper
 exec_always feh --bg-fill /home/bman/Pictures/galac_turquise.jpg
-exec_always polybar top
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Remove title bars from windows
 for_window [class="^.*"] border pixel 1
