@@ -155,9 +155,9 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-    status_command i3blocks
-}
+#bar {
+#status_command i3blocks
+#}
 
 # Gaps
 #gaps inner 15
@@ -166,8 +166,12 @@ bar {
 # Set lock keybind
 bindsym $mod+Shift+x exec i3lock-fancy -f Office-Code-Pro-Light -t LOCKED -p
 
+bindsym $mod+Shift+w exec workman
+bindsym $mod+Shift+n exec normal
+
 # Set wallpaper
-exec_always feh --bg-fill /home/bman/Pictures/galac_light_blue.jpg
+exec_always feh --bg-fill /home/bman/Pictures/gotg.jpg
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # Remove title bars from windows
 for_window [class="^.*"] border pixel 1

@@ -10,6 +10,7 @@ set path+=**
 set wildmenu
 set showcmd
 
+set cursorline
 set background=dark
 colorscheme solarized
 
@@ -55,8 +56,9 @@ set relativenumber
 set incsearch
 
 " Warn when reaching 80 chars
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+match ErrorMsg '\%>80v.\+'
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
 " Begin Vundle
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -87,6 +89,8 @@ syntax on
 " Make 'jk' act as Esc
 inoremap jk <esc>
 vnoremap jk <esc> 
+inoremap ht <esc>
+vnoremap ht <esc> 
 
 inoremap ( ()<esc>
 inoremap ( ()<esc>
@@ -96,4 +100,5 @@ inoremap { {}<esc>
 inoremap " ""<esc>
 
 inoremap <tab> <C-p>
+map <C-n> :!sh -xc './build' <cr><cr>
 
