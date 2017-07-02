@@ -87,6 +87,8 @@ syntax on
 " Make 'jk' act as Esc
 inoremap jk <esc>
 vnoremap jk <esc> 
+inoremap ht <esc>
+vnoremap ht <esc> 
 
 inoremap ( ()<esc>
 inoremap ( ()<esc>
@@ -96,4 +98,6 @@ inoremap { {}<esc>
 inoremap " ""<esc>
 
 inoremap <tab> <C-p>
+
+map <F4> :!sh -xc './build' <cr><cr>
 
