@@ -1,0 +1,52 @@
+set nocompatible
+filetype off
+
+set encoding=utf-8
+
+set noswapfile
+set dir=/tmp/
+
+set showcmd
+
+set background=dark
+
+" show existing tab with 4 spaces width
+set tabstop=4
+
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+
+" On pressing tab, insert 4 spaces
+set expandtab
+
+" Auto indent
+set autoindent
+set smartindent
+set cindent
+
+" Set relative numbers
+set nu
+set relativenumber
+
+" Incremental search highlight
+set incsearch
+
+" Warn when reaching 80 chars
+match ErrorMsg '\%>80v.\+'
+
+syntax on
+
+" Make 'jk' act as Esc
+inoremap jk <esc>
+vnoremap jk <esc> 
+inoremap ht <esc>
+vnoremap ht <esc> 
+
+inoremap ( ()<esc>
+inoremap ( ()<esc>
+inoremap [ []<esc>
+inoremap { {}<esc>
+inoremap " ""<esc>
+
+inoremap <tab> <C-p>
+
