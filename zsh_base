@@ -1,0 +1,14 @@
+CASE_SENSITIVE="true"
+
+HIST_STAMPS="yyyy-mm-dd"
+
+HISTSIZE=1000
+SAVEHIST=1000
+unsetopt autocd beep
+setopt histignorespace
+bindkey -v
+
+alias ls='ls --color=auto'
+
+BROWSER=/usr/bin/firefox
+EDITOR=/usr/bin/vim
