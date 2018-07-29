@@ -18,7 +18,7 @@ Xft.rgba:                   rgba
 URxvt.depth:                32
 URxvt.geometry:             90x30
 URxvt.transparent:          false
-URxvt.fading:               12
+URxvt.fading:               8
 ! URxvt.urgentOnBell:         true
 ! URxvt.visualBell:           true
 URxvt.loginShell:           true
@@ -28,8 +28,8 @@ URxvt.lineSpace:            0
 
 ! Fonts
 URxvt.allow_bold:           true
-URxvt*font: xft: Office Code Pro: size=14
-URxvt*boldFont: xft: Office Code Pro: size=14
+URxvt*font: xft: Office Code Pro: size=14, xft:Source Code Pro for Powerline: size=14
+URxvt*boldFont: xft: Office Code Pro: size=14, xft:Source Code Pro for Powerline: size=14
 
 ! Fix font space
 URxvt*letterSpace: -1
